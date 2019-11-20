@@ -1,0 +1,37 @@
+.slot-container {
+  grid-column: 1 / -1;
+}
+
+.custom-cta-module {
+  padding: 4rem 0;
+}
+
+.cta-snipe {
+  color: #333333;
+  font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: .5rem ;
+}
+
+.cta-title {
+  font-weight: 800;
+  margin: 0 !important;
+  margin-bottom: 1rem ;
+}
+
+
+.cta-button {
+  font-size: 1.5rem;
+  box-shadow: none;
+  border: solid 2px #333333;
+  margin-top: 4rem;
+  transition: .25s ease-out;
+
+  &:hover {
+    box-shadow: .25rem .25rem 1rem rgba(black, .25) !important;
+    transform: scale(1.05);
+  }
+}

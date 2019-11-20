@@ -1,0 +1,19 @@
+
+
+.sign-in {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  
+  h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+
+  }
+}

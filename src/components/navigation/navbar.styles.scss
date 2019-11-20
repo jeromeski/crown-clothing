@@ -1,0 +1,47 @@
+nav {
+  background-color: transparent !important;
+  padding: 0 1.5rem;
+
+  .is-active {
+    font-weight: 700;
+  }
+}
+
+nav ul li a {
+  color: #333333 !important;
+  font-weight: 400;
+  text-align: center;
+}
+
+nav i {
+  color: #333333 !important;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+  }
+}
+  nav .brand-logo {
+    top: 10%;
+}
+
+
+.sidenav .divider {
+  margin: 0;
+}
+
+.sidenav {
+  background-image: url('../../assets/crown.svg');
+  background-repeat: no-repeat;
+  background-position: 120px 10px !important;
+  padding-top: 5rem;
+}
+
+.sidenav li {
+  border-bottom: 1px solid lightgrey !important;
+}
+
+

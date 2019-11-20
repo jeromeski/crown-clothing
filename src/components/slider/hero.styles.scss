@@ -1,0 +1,40 @@
+.hero {
+
+  &__caption {
+    margin-top: 5rem;
+  }
+
+  &__heading {
+
+    &--main {
+      margin-top: -.25rem;
+      font-weight: 700;
+    }
+
+    &--sub {
+      margin-top: -.5rem;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    &--small {
+      text-transform: uppercase;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+.slider .slides li img {
+  height: auto !important;
+
+  @media screen and (min-width: 576px) {
+    height: 100% !important;
+  }
+}
