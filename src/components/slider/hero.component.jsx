@@ -10,14 +10,19 @@ class Hero extends React.Component {
   componentDidMount() { 
     document.addEventListener('DOMContentLoaded', function() {
       let slider = document.querySelectorAll('.slider');
-      M.Slider.init(slider, {});
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 600,
+        transition: 500,
+        interval: 6000
+      });
     });   
   }
 
   
   render() {
     return (
-      <Slider options={{indicators: false, height: 600, transition: 500, interval: 6000 }}>
+      <Slider options={{indicators: false, height: 600, transition: 500, interval: 6000}} >
         <Slide className='hero__item' image={<picture>
           <source srcSet={"https://i.ibb.co/nr4FLTm/hero-1-mobile.jpg"} media='(max-width: 576px)' />
           <img className="hero__img" src={'https://i.ibb.co/7VrRRKZ/hero-1.jpg'} alt='hero'/>

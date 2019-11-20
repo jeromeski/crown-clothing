@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom'
+import { connect } from 'react-redux'
 
 import {Navbar, NavItem} from 'react-materialize';
 import M from "materialize-css";
@@ -44,4 +45,8 @@ class Navigation extends React.Component {
   }
 }
 
-export default Navigation;
+const mapStateToProps = state => ({
+  currentUser: state.user.currentUser
+})
+
+export default connect(mapStateToProps)(Navigation);
